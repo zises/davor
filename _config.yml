@@ -8,7 +8,7 @@
 # Site settings
 title: Davor Physical Therapy and Rehabilitation
 email: davor@davor.pt
-description: Getting Chicago on the path to recovery and excellence
+description: Get on the path to recovery and excellence
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://davor.pt # the base hostname & protocol for your site
 twitterUrl: 
