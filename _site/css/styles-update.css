@@ -35,8 +35,12 @@ body { overflow-x: hidden; }
     Bg primary
 \* ------------------------------------------------------------ */
 
-.bg-primary { position: relative; overflow: hidden; }
+.bg-primary { position: relative; display: flex; overflow: hidden; }
+.bg-primary .bg-primary__content { display: flex; }
+.bg-primary .bg-primary__row { display: flex; }
 .bg-primary .bg-primary__image { position: absolute; left: 0; right: 50%; top: 0; bottom: 0; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+
+.bg-primary .bg-primary__col { display: flex; align-items: center; }
 
 .bg-primary .bg-primary__content .bg-primary__row { margin: 0 -40px; }
 .bg-primary .bg-primary__content .bg-primary__col { padding: 0 40px; }
@@ -89,3 +93,10 @@ form .form-control {margin-top: 20px; }
 
 .btn:focus { outline: none; }
 .btn:active:focus { outline: none; }
+
+/* ------------------------------------------------------------ *\
+    Select
+\* ------------------------------------------------------------ */
+
+.select { position: relative; }
+.select:after { content: ''; position: absolute; right: 15px; top: 13px; width: 0; height: 0; border-style: solid; border-width: 10px 5px 0 5px; border-color: #d3d3d3 transparent transparent transparent; }
